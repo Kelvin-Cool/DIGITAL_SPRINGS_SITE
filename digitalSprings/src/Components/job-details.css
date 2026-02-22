@@ -1,0 +1,22 @@
+.job-details{
+    padding: 50px 0;
+}
+
+.job-details p{
+    max-width: 800px;
+    padding: 10px 0;
+}
+
+.job-details button{
+    background: blue;
+    width:300px;
+    height: 40px;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border:0;
+    outline: none;
+    color: #fff;
+    cursor:pointer;
+    margin-top: 20px;
+
+}

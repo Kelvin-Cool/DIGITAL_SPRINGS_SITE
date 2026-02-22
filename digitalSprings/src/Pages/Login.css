@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h10{
+    font-size: 1.3rem;
+    color: chocolate;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    top: 20px;
+    margin-left: 100px;
+    position: relative;
+}
+
+/* Style for setError "Password do not Match" */
+.error-message {
+    color: red;
+    font-size: 10px;
+}
+
+.wrapper2{
+    width: 360px;
+    height: 540px;
+    margin:8% auto;
+     background: #f1f5f9;
+    border-radius: 5px;
+    position: relative;
+    overflow:hidden;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 2px 2px rgb(0, 0, 0,0.088);
+}
+
+
+.wrapper2 form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left:30px;
+    transition: 0.5s;
+    
+}
+form input{
+    border: none;
+    border-bottom: 1.5px solid #999;
+    outline:#ffad06;
+    background: transparent;
+    text-align: left;
+    width: 100%;
+    height: 40%;
+    padding:10px 5px;
+    margin:5px 0;
+    
+}
+
+
+label::after {
+    content: "* ";
+    color: red;
+    font-weight: bold;
+}
+::placeholder{
+    color: gray;
+}
+
+form button{
+    background: green;
+    width:300px;
+    height: 40px;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border:0;
+    outline: none;
+    color: #fff;
+    cursor:pointer;
+    margin-top: 20px;
+
+}
+form button:hover{
+    background: linear-gradient(to right, #ff105f,#ffad06);;
+    box-shadow: 
+    0 0 20px #ff105f,
+    0 0 80px #ff105f,
+    0 0 320px #ff105f;
+    color: #255784;
+    transition-delay: 0.3s;
+}
+
+ion-icon{
+    font-size: 20px;
+    font-weight: 500;
+    color:#666;;
+    position: relative;
+    top: 35px;
+    float: right;
+}
+
+.icn ion-icon{
+color:chocolate;
+top: 20px;
+margin-right: 50px;
+background: #666;
+border-radius: 100%;
+
+
+}
+
+.icn ion-icon:hover{
+color: gray;
+transition:0.3s ease;  
+}
+.remember-me1 {
+    color:chocolate; 
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    
+}
+.remember-me1 input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.remember-me1 a{
+    font-size: 14px;
+    color:chocolate; 
+    text-decoration: none;
+    margin-left: 40px;
+    
+}
+
+.remember-me1 a:hover{
+       color: royalblue;
+}
+
+label{
+    color: grey;
+}
+
+.login-link1 p{
+    text-align: center;
+    margin-left: 30px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.login-link1 a{
+    color: chocolate;
+}
+
+.login-link1 a:hover{
+color: royalblue;
+}
+
+
+
+@media  (max-width:800px){
+  nav{
+    height: fit-content;
+    width: 950px;
+  }
+  
+  .wrapper2{
+    margin-left: 300px;
+  }
+  body{
+    width: fit-content;
+    
+  }
+ 
+  
+.icn ion-icon{
+color:chocolate;
+top: 15px;
+   margin-left: 50px;
+   
+}
+
+}
+

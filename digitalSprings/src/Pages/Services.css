@@ -1,0 +1,20 @@
+*{
+margin: 0;
+border: 0;
+box-sizing: border-box;
+
+}
+
+h20{
+    font-size: 50px;
+    text-align: center;
+    color: chocolate;
+    margin-left: 500px;
+}
+
+#dc{
+    font-size: 14px;
+    text-align: left;
+    color: lawngreen;
+    margin-left: 200px;
+}

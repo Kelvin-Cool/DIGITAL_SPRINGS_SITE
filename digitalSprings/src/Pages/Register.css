@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-size: 1.8rem;
+    color: chocolate;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    top: 20px;
+    margin-left: 50px;
+    position: relative;
+}
+.wrapper1{
+    width: 360px;
+    gap: 6px;
+    display: flex;
+    height: 680px;
+    margin:8% auto;
+     background:#f1f5f9;
+    border-radius: 5px;
+    position: relative;
+    overflow:hidden;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 2px 2px rgb(0, 0, 0,0.088);
+}
+
+/* Style for setError "Password do not Match" */
+.error-message {
+    color: red;
+    font-size: 10px;
+}
+
+
+.wrapper1 form{
+    width: 280px;
+    position: relative;
+    top: 100px;
+    left:30px;
+    transition: 0.5s;
+}
+form input{
+    width:100%;
+    padding:10px 5px;
+    margin:5px 0;
+    border: 2px;
+    border-bottom: 2px solid chocolate;
+    outline:#ffad06;
+    background: transparent;
+    text-align: left;
+    
+}
+
+ form label{
+    font-size: 14px;
+    color:#666;
+    font-weight: bold;
+}
+label::after {
+    content: "* ";
+    color: red;
+    font-weight: bold;
+}
+::placeholder{
+    color: gray;
+}
+
+form button{
+    background: green;
+    width:300px;
+    height: 40px;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border:0;
+    outline: none;
+    color: #fff;
+    cursor:pointer;
+    margin-top: 20px;
+
+}
+form button:hover{
+    background: linear-gradient(to right, #ff105f,#ffad06);;
+    box-shadow: 
+    0 0 20px #ff105f,
+    0 0 80px #ff105f,
+    0 0 320px #ff105f;
+    color: #255784;
+    transition-delay: 0.3s;
+}
+
+ion-icon{
+    font-size: 20px;
+    color:#666;
+    position: relative;
+    top: 10px;
+    float: right;
+    padding: 5px 10px;
+}
+
+.remember-me {
+    color:chocolate; 
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+    
+}
+.remember-me input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.remember-me a{
+    font-size: 14px;
+    color:chocolate; 
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+.remember-me a:hover{
+       color: royalblue;
+}
+
+
+.login-link p{
+  text-align: left;
+  margin-left: 20px;
+ 
+}
+
+
+.login-link2 p{
+    text-align: center;
+    margin-left: 30px;
+     color: #666;
+}
+
+.login-link2 a{
+    color: chocolate;
+}
+/* Password strength indicator */
+.password-strength {
+    color: green;
+    font-size: 10px;
+}
+.login-link2 a:hover{
+    color: royalblue;
+}
+
+
+
+
+@media  (max-width:800px){
+  nav{
+    height: fit-content;
+    width: 950px;
+  }
+  .wrapper1{
+    margin-left: 300px;
+  }
+  body{
+    width: fit-content;
+    
+  }
+ 
+  
+}
+
