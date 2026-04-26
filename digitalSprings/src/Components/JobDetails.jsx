@@ -39,8 +39,7 @@ const JobDetails = () => {
         <p><b>Job Description: </b>{jobDetails.description}</p>
         <p><b>Deadline: </b>{jobDetails.deadline}</p>
         <div className="job-actions">
-            <button 
-                className="apply-btn"
+            <button type="submit" className="apply-btn"
                 onClick={() => setShowApply(true)}
             >
                 Apply Now

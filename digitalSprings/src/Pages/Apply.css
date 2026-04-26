@@ -16,6 +16,7 @@
     animation: fadeInApply 0.5s ease-out;
 }
 
+
 @keyframes fadeInApply {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -69,7 +70,7 @@
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background-color: #ff342b;
+    background: green;
     color: white;
     border: none;
     border-radius: 8px;
@@ -81,13 +82,15 @@
     margin-top: 10px;
 }
 
-.submit-btn:hover:not(:disabled) {
-    background-color: #d63031;
-}
 
-.submit-btn:disabled {
-    background-color: #b2bec3;
-    cursor: not-allowed;
+.submit-btn:hover {
+      background: linear-gradient(to right, #ff105f,#ffad06);;
+    box-shadow: 
+    0 0 20px #ff105f,
+    0 0 80px #ff105f,
+    0 0 320px #ff105f;
+    color: #255784;
+    transition-delay: 0.3s;
 }
 
 .form-result {

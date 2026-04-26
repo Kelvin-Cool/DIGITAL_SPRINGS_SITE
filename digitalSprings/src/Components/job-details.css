@@ -42,21 +42,28 @@
 }
 
 .apply-btn {
-    background: #ff342b;
-    width: 100%;
-    max-width: 300px;
-    height: 45px;
+     width: 100%;
+    padding: 15px;
+    background: green;
+    color: white;
+    border: none;
     border-radius: 8px;
-    border: 0;
-    outline: none;
-    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    font-weight: bold;
+    outline: none;
     transition: background 0.3s;
+    margin-top: 10px;
 }
 
 .apply-btn:hover {
-    background: #d63031;
+      background: linear-gradient(to right, #ff105f,#ffad06);;
+    box-shadow: 
+    0 0 20px #ff105f,
+    0 0 80px #ff105f,
+    0 0 320px #ff105f;
+    color: #255784;
+    transition-delay: 0.3s;
 }
 
 
