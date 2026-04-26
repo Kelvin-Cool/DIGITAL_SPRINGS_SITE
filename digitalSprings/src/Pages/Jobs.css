@@ -39,11 +39,16 @@ h2{
 
 
 @media  (max-width:800px){
-
-  
+  .jobs {
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 20px 0;
+  }
   body{
-    width: fit-content;
-    
+    width: 100%;
   }
  h8{
     font-size: 14;

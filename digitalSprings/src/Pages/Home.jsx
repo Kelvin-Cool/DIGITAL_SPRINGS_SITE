@@ -1,21 +1,22 @@
 import React from 'react'
 import './Home.css'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
   const navigate = useNavigate()
   
 return (
+  <>
   <div id="hm">
-    <div class="card">
-      <div class="loader">
+    <div className="card">
+      <div className="loader">
       
         <p>Web</p>
-        <div class="words">
-          <span class="word">Application</span>
-          <span class="word">Design</span>
-          <span class="word">Development</span>
-          <span class="word">Course</span>
+        <div className="words">
+          <span className="word">Application</span>
+          <span className="word">Design</span>
+          <span className="word">Development</span>
+          <span className="word">Course</span>
         </div>
       </div>
     </div>
@@ -62,7 +63,7 @@ return (
       </span>
     </button>
   </div>
-  
+  </>
 )
 }
 

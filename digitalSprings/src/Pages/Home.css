@@ -1,9 +1,28 @@
 *{
    padding: 0;
    margin: 0;
-   box-sizing: border-box; 
+   box-sizing: border-box;
    --bg-color:grey;
 }.card {
+
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* This will make the main content area expand */
+#hm {
+    flex-grow: 1;
+}
+
+
+
   /* color used to softly clip top and bottom of the .words container */
   padding: 1rem 2rem;
   border-radius: 1.25rem;
@@ -197,20 +216,24 @@ body{
 }
 
 @media  (max-width:800px){
-  
+  /* The footer margin-top is now handled by flexbox and margin-top: auto in Footer.css */
 nav{
     height: fit-content;
-    width: 200vw;
+    width: 100%;
   }
   
   body{
-    width: 950px;
-    
+    width: 100%;
+    height: auto;
   }
- 
-  
+
+  .btn {
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .loader p {
+    font-size: 30px;
+  }
 }
-
-
-
-

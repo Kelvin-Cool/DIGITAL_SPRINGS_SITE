@@ -78,7 +78,7 @@ const [form, setForm] = useState({
   };
 
   return (
-    <div>
+    <>
       <div className="contact-container">
         <form method="POST" className="contact-left" onSubmit={handleSubmit}>
           <div className="contact-left-title">
@@ -224,7 +224,7 @@ const [form, setForm] = useState({
   <div className="contact-right">
   </div>
 </div>
-</div>
+</>
     );
     }
 

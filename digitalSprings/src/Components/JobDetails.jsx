@@ -1,22 +1,55 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './job-details.css';
-import { useLoaderData } from 'react-router-dom';
-
+import { useLoaderData, useNavigate, Link } from 'react-router-dom';
+import jobsDataLocal from '../assets/Data.json';
+import Apply from '../Pages/Apply';
 
 const JobDetails = () => {
     
     const jobDetails= useLoaderData();
-    // Here you would typically fetch the job details using the id
+    const [showApply, setShowApply] = useState(false);
+
+    if (showApply) {
+        return <Apply jobTitleProp={jobDetails?.title} />;
+    }
+
+    if (!jobDetails) {
+        return (
+            <div className='job-details-container'>
+                <div className='job-card'>
+                    <h2 style={{ textAlign: 'center', color: '#ff342b' }}>Job not found</h2>
+                    <div className="job-actions">
+                        <Link to="/Jobs" className="back-link">Back to Jobs list</Link>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
   return (
-    <div className='job-details'>
-    <p><b>Job Title:</b>{jobDetails.title}</p>
-    <p><b>Company:</b>{jobDetails.company}</p>
-    <p><b>Location:</b>{jobDetails.location}</p>
-    <p><b>Salary:</b>{jobDetails.salary}</p>
-    <p><b>Description:</b>Do you want to apply?</p>
-    <p><b>Deadline:</b>{jobDetails.deadline}</p>
-    <button>Apply Now</button>
+    <>
+    <div className='job-details-container'>
+      <div className='job-card'>
+        <p><b>Job Title: </b>{jobDetails.title}</p>
+        <p><b>Company: </b>{jobDetails.company}</p>
+        <p><b>Location: </b>{jobDetails.location}</p>
+        <p><b>Salary: </b>{jobDetails.salary}</p>
+        <p><b>Qualification: </b>{jobDetails.qualification}</p>
+        <p><b>Work Experience: </b>{jobDetails.experience}</p>
+        <p><b>Job Description: </b>{jobDetails.description}</p>
+        <p><b>Deadline: </b>{jobDetails.deadline}</p>
+        <div className="job-actions">
+            <button 
+                className="apply-btn"
+                onClick={() => setShowApply(true)}
+            >
+                Apply Now
+            </button>
+            <Link to="/Jobs" className="back-link">Back to Jobs</Link>
+        </div>
+      </div>
     </div>
+    </>
   )
 }
 
@@ -24,7 +57,5 @@ export default JobDetails
 
 export const JobDetailsLoader = async ({ params }) => {
     const { id } = params;
-    const response = await fetch(`http://localhost:5000/Jobs/` + id);
-    
-    return response.json();
+    return jobsDataLocal.find(job => (job.id || job._id).toString() === id) || null;
 };

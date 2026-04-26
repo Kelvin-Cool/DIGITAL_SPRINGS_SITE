@@ -4,8 +4,10 @@ import { Chart as chartjs } from 'chart.js/auto'
 import { Bar,Doughnut,Line } from 'react-chartjs-2'
 import sourceData from "./Data/sourceData.json"
 import revenueData from "./Data/revenueData.json"
+import Footer from '../Components/Footer'
 function Dashboard() {
 return (
+    <>
     <div className='main'>
         <div className='datacard-revenueCard'>
             <Line
@@ -182,6 +184,8 @@ return (
             />
         </div> 
     </div>
+    <Footer />
+    </>
 )
 }
 

@@ -1,34 +1,35 @@
-{
-    "Jobs":
-    [
-        {
-            "id": 1,
-            "title": "Software Engineer:",
-            "company": "Tech Innovations",
-            "location": "San Francisco, CA",
-            "salary": 120000,
-            "description": "Develop and maintain software applications.",
-            "deadline": "27/06/2025"
-            
-        },
-        {
-            "id": 2,
-            "title": "Data Scientist:",
-            "company": "Data Insights",
-            "location": "New York, NY",
-            "salary": 130000,
-            "description": "Analyze data to drive business decisions.",
-            "deadline": "27/06/2025"
-        },
-        {
-            "id": 3,
-            "title": "Product Manager:",
-            "company": "Global Solutions",
-            "location": "Austin, TX",
-            "salary": 115000,
-            "description": "Oversee product development and strategy.",
-               "deadline": "27/06/2025"
-        }
-    ]
-    
-}
+[
+  {
+    "id": "1",
+    "title": "Software Engineer",
+    "company": "Tech Innovations",
+    "location": "San Francisco, CA",
+    "salary": "$120,000",
+    "description": "Develop and maintain software applications.",
+    "qualification": "Bachelor's Degree in Computer Science or related field.",
+    "experience": "3+ years of professional experience in Fullstack Development.",
+    "deadline": "28/04/2026"
+  },
+  {
+    "id": "2",
+    "title": "Data Scientist",
+    "company": "Data Insights",
+    "location": "New York, NY",
+    "salary": "$130,000",
+    "description": "Analyze data to drive business decisions.",
+    "qualification": "Master's Degree in Data Science, Statistics, or Mathematics.",
+    "experience": "2+ years working with Large Language Models and Python.",
+    "deadline": "26/04/2026"
+  },
+  {
+    "id": "3",
+    "title": "Product Manager",
+    "company": "Global Solutions",
+    "location": "Austin, TX",
+    "salary": "$115,000",
+    "description": "Oversee product development and strategy.",
+    "qualification": "PMP Certification or MBA preferred.",
+    "experience": "5+ years in Agile project management and product lifecycle.",
+    "deadline": "27/04/2026"
+  }
+]

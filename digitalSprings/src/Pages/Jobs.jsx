@@ -1,14 +1,17 @@
 import React from 'react'
 import './Jobs.css'
 import { useLoaderData, Link } from 'react-router-dom';
+import jobsDataLocal from '../assets/Data.json';
+
 
 const Jobs = () => {
     const jobsData=useLoaderData();
   return (
+    <>
     <div className="jobs">
       {jobsData.map((job) => {
         return (
-          <Link >
+          <Link to={`/Jobs/${job.id || job._id}`} key={job.id || job._id}>
             <div>
               <h2>{job.title}</h2>
               <p>{job.company}</p>
@@ -21,20 +24,12 @@ const Jobs = () => {
         );
       })}
     </div>
+    </>
   )
 }
 
 export default Jobs
 
 export const JobsLoader = async () => {
-    try {
-        const response = await fetch('http://localhost:5000/Jobs');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Fetch error:', error);
-        return [];
-    }
+    return jobsDataLocal;
 }
