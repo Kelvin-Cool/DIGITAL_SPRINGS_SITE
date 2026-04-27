@@ -7,6 +7,8 @@ function Reset() {
     confirmPassword: '',
     rememberMe: false,
   });
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -113,18 +115,28 @@ function Reset() {
             <div className="input-box">
               <label htmlFor="password">New Password:</label>
               <span className="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <span className="icon" onClick={() => setShowPassword(!showPassword)} style={{ cursor: 'pointer' }}>
+                <ion-icon name={showPassword ? "eye-outline" : "eye-off-outline"}></ion-icon>
+              </span>
               <input
                 type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 id="password"
                 required
                 value={form.password}
                 onChange={handleChange}
               />
+            </div>
+            <div className="input-box">
               <label htmlFor="confirmPassword">Confirm Password:</label>
               <span className="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <span className="icon" onClick={() => setShowConfirmPassword(!showConfirmPassword)} style={{ cursor: 'pointer' }}>
+                <ion-icon name={showConfirmPassword ? "eye-outline" : "eye-off-outline"}></ion-icon>
+              </span>
               <input
                 type="password"
+                type={showConfirmPassword ? "text" : "password"}
                 name="confirmPassword"
                 id="confirmPassword"
                 required

@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 function Login()  {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -70,9 +71,11 @@ function Login()  {
             </div>
             <div className="input-box">
               <label htmlFor="password">Password:</label>
-              <span className="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <span className="icon" onClick={() => setShowPassword(!showPassword)} style={{ cursor: 'pointer' }}>
+                <ion-icon name={showPassword ? "eye-outline" : "eye-off-outline"}></ion-icon>
+              </span>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 required
                 value={password}

@@ -12,6 +12,8 @@ function Register() {
     confirmPassword: '',
     rememberMe: false,
   });
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -125,11 +127,11 @@ function Register() {
             </div>
             <div className="input-box">
               <label htmlFor="password">Password:</label>
-              <span className="icon">
-                <ion-icon name="lock-closed-outline"></ion-icon>
+              <span className="icon" onClick={() => setShowPassword(!showPassword)} style={{ cursor: 'pointer' }}>
+                <ion-icon name={showPassword ? "eye-outline" : "eye-off-outline"}></ion-icon>
               </span>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 id="password"
                 name="password"
                 required
@@ -142,11 +144,11 @@ function Register() {
             </div>
             <div className="input-box">
               <label htmlFor="confirmPassword">Confirm Password:</label>
-              <span className="icon">
-                <ion-icon name="lock-closed-outline"></ion-icon>
+              <span className="icon" onClick={() => setShowConfirmPassword(!showConfirmPassword)} style={{ cursor: 'pointer' }}>
+                <ion-icon name={showConfirmPassword ? "eye-outline" : "eye-off-outline"}></ion-icon>
               </span>
               <input
-                type="password"
+                type={showConfirmPassword ? "text" : "password"}
                 id="confirmPassword"
                 name="confirmPassword"
                 required
