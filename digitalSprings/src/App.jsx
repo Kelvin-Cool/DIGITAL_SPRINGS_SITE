@@ -2,6 +2,8 @@ import React from 'react';
 import NavBar from './Pages/NavBar';
 import Home from './Pages/Home';
 import Dashboard from './Pages/Dashboard';
+import About from './Pages/About'; // Import the About component
+import Apply from './Pages/Apply'; // Import the Apply component
 import Register from './Pages/Register';
 import Login from './Pages/Login';
 import Services from './Pages/Services';
@@ -24,6 +26,8 @@ const router = createBrowserRouter(
         <Route path="Dashboard" element={<Dashboard/>} />
         <Route path="Register" element={<Register/>} />
         <Route path="Login" element={<Login />}/>
+        <Route path="About" element={<About />} /> {/* Add route for About page */}
+        <Route path="Apply" element={<Apply />} /> {/* Add route for Apply page */}
         <Route path="Services" element={<Services />} />
         <Route path="Contact" element={<Contact/>} />
         <Route path="Reset" element={<Reset />} />

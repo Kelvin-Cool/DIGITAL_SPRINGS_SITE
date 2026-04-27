@@ -98,9 +98,9 @@ function Login()  {
              {/*<NavLink to="#"><ion-icon name="logo-facebook"></ion-icon></NavLink>*/}
              {/*<NavLink to="#"><ion-icon name="logo-instagram"></ion-icon></NavLink>*/}
             {/* <NavLink to="#"><ion-icon name="logo-twitter"></ion-icon></NavLink>*/}
-             <NavLink to="#"><ion-icon name="logo-google"></ion-icon></NavLink>
+             <a href="https://accounts.google.com" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-google"></ion-icon></a>
             {/* <NavLink to="#"><ion-icon name="logo-skype"></ion-icon></NavLink>*/}
-             <NavLink to="#"><ion-icon name="logo-github"></ion-icon></NavLink>
+             <a href="https://github.com/login" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
             </div>
           </form>
         </div>

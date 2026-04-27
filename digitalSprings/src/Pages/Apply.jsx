@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Apply.css';
 
-const Apply = () => {
+const Apply = ({ jobTitleProp }) => {
     const location = useLocation();
     const navigate = useNavigate();
-    const jobTitle = location.state?.jobTitle || "Job Advertisement";
+    const jobTitle = jobTitleProp || location.state?.jobTitle || "Job Advertisement";
 
     const [formData, setFormData] = useState({
         fullName: '',        email: '',

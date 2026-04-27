@@ -218,3 +218,13 @@ nav button:hover .svg-icon {
   }
 
   
+ @keyframes colorChange {
+            0% { color: lawngreen; }
+            25% { color: #e74c3c; }
+            50% { color: #f1c40f; }
+            75% { color: #1a1a1a; }
+            100% { color: #fff }
+        }
+      h1{
+            animation: colorChange 8s infinite;
+        }

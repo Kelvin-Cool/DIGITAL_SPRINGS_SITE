@@ -127,7 +127,10 @@ const [form, setForm] = useState({
                       <option value="vue">Vue</option>
                              <option value="angular">Angular</option>
                                            <option value="typescript">Typescript</option>
+                                            <option value="react-native">React-Native</option>
                                                   <option value="firebase">Firebase</option>
+                                                  <option value="full-stack">Full-stack</option>
+
       </select>
       <textarea
         name="message"
