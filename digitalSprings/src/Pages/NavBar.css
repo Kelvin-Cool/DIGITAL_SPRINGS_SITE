@@ -222,7 +222,7 @@ nav button:hover .svg-icon {
             0% { color: lawngreen; }
             25% { color: #e74c3c; }
             50% { color: #f1c40f; }
-            75% { color: #1a1a1a; }
+            75% { color: gray; }
             100% { color: #fff }
         }
       h1{
