@@ -16,7 +16,7 @@ return (
           <span className="word">Application</span>
           <span className="word">Design</span>
           <span className="word">Development</span>
-          <span className="word">Course</span>
+          <span className="word">/Mobile App Development</span>
         </div>
       </div>
     </div>
